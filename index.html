@@ -1,12 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GoDelivery Survey</title>
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <div id="main-container">
+      <div id="main">
+        <img
+          id="background-image"
+          src="images/background-img.webp"
+          alt="GoDelivery Background Image"
+        />
+        <div id="content-container">
+          <div id="header-container">
+            <div id="header">
+              <img id="gonowlogo" src="images/GoNow Logo.svg" />
+              <h1 id="title">Costumer Satisfaction Survey</h1>
+              <p id="description">
+                Thank you for choosing GoNow Delivery. Kindly answer the survey
+                form to to help us improve the quality of our services.
+              </p>
+            </div>
+          </div>
+          <div id="form-container">
+            <div id="form-background">
+              <form id="survey-form" action="">
+                <div id="inputcontent1">
+                  <label id="name-label" for="name">Name</label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Enter your full name"
+                    required
+                  />
+                </div>
+                <div id="inputcontent2">
+                  <label id="email-label" for="email">Email</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Enter your email address"
+                    required
+                  />
+                </div>
+                <div id="inputcontent3">
+                  <label id="number-label" for="number">Tracking Number</label>
+                  <input
+                    type="number"
+                    id="number"
+                    name="tracking number"
+                    min="0"
+                    max="999999"
+                    placeholder="Enter your delivery tracking number"
+                    required
+                  />
+                </div>
+                <div id="inputcontent4">
+                  <label id="dropdown-label" for="dropdown">City</label>
+                  <select name="city" id="dropdown"> 
+                    <option value="Cotabato">
+                        Cotabato
+                      </option>
+                    <option value="General Santos City">
+                      General Santos City
+                    </option>
+                    <option value="Sarangani">Saranggani</option>
+                    <option value="South Cotabato">South Cotabato</option>
+                    <option value="Sultan Kudarat">Sultan Kudarat</option>
+                  </select>
+                </div>
+                <div id="inputcontent3">
+                    <label id="number-label" for="number">Tracking Number</label>
+                    <input
+                      type="number"
+                      id="number"
+                      name="tracking number"
+                      min="0"
+                      max="999999"
+                      placeholder="Enter your delivery tracking number"
+                      required
+                    />
+                  </div>
+                  <div id="inputcontent3">
+                    <label id="number-label" for="number">Tracking Number</label>
+                    <input
+                      type="number"
+                      id="number"
+                      name="tracking number"
+                      min="0"
+                      max="999999"
+                      placeholder="Enter your delivery tracking number"
+                      required
+                    />
+                  </div>
+                  <div id="inputcontent3">
+                    <label id="number-label" for="number">Tracking Number</label>
+                    <input
+                      type="number"
+                      id="number"
+                      name="tracking number"
+                      min="0"
+                      max="999999"
+                      placeholder="Enter your delivery tracking number"
+                      required
+                    />
+                  </div>
+                  <div id="inputcontent3">
+                    <label id="number-label" for="number">Tracking Number</label>
+                    <input
+                      type="number"
+                      id="number"
+                      name="tracking number"
+                      min="0"
+                      max="999999"
+                      placeholder="Enter your delivery tracking number"
+                      required
+                    />
+                  </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
 </html>
