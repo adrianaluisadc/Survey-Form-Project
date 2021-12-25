@@ -44,6 +44,7 @@ input {
     color: #000;
 }
 
+
 #form-background {
     background: rgba(0, 0 ,0, .5);
     border-radius: 25px 25px 0 0;
@@ -57,4 +58,62 @@ select {
     font-family: var(--main-font-fam);
     font-size: 1em;
     padding: 2%;
+}
+
+#radio-container1, #radio-container2, #radio-container3 {
+    width: 100%;
+    padding-left: 5%;
+}
+
+input[type="radio"]{
+    opacity: 0;
+}
+
+input[type="radio"] + label {
+    padding-left: 9%;
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    color: #fff;
+    line-height: 1.3em;
+}
+
+input[type="radio"] + label::before {
+    content:"";
+    position: absolute;
+    width: 1em;
+    height: 1em;
+    left:0;
+    top:0;
+    border-radius: 100%;
+    border: 2px solid #fff;
+    background: #fff;
+
+}
+
+input[type="radio"]:checked + label::after {
+    content:"";
+    position: absolute;
+    width: 1em;
+    height: 1em;
+    left: 2px;
+    top:2px;
+    border-radius: 100%;
+    background: #FF6600;
+    opacity: 1;
+    transform: scale(1);
+    transition: .3s ease;
+}
+
+input[type="radio"]:not(:checked) + label::after {
+    content:"";
+    position: absolute;
+    width: 1em;
+    height: 1em;
+    left: 2px;
+    top:2px;
+    border-radius: 100%;
+    background: #FF6600;
+    opacity: 0;
+    transform: scale(0);
 }
