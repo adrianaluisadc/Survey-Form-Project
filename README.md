@@ -1,6 +1,9 @@
 # Survey-Form-Project
 
-/github/size/:user/:repo/:path*
+
+[![forthebadge](https://forthebadge.com/images/badges/uses-git.svg)](https://forthebadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/uses-css.svg)](https://forthebadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/uses-html.svg)](https://forthebadge.com)
 
 A survey form project assigned by FreeCodeCamp.org in the Responsive Design Course, implementing only HTML5 and CSS3.
 
