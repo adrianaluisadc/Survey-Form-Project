@@ -97,41 +97,39 @@
       "h1"
       "pd";
   }
-  
+
   #gonowlogo {
     justify-self: center;
   }
 
-
   label {
     font-size: 1.2em;
-    
   }
 
   #inputcontent5 {
-      float: left;
-      width: 50%;
+    float: left;
+    width: 50%;
   }
 
   #inputcontent6 {
-      float: left;
-      width: 50%;
+    float: left;
+    width: 50%;
   }
 
-  #checkbox-label{
-      padding-top: 0;
-      display: inline-block;
+  #checkbox-label {
+    padding-top: 0;
+    display: inline-block;
   }
 
   #starrating-label {
     clear: both;
   }
 
-  #stars-box{
-      font-size: 3em;
+  #stars-box {
+    font-size: 3em;
   }
 
   textarea {
-      font-size: 1em;
+    font-size: 1em;
   }
 }

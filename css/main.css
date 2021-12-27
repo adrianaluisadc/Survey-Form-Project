@@ -416,10 +416,10 @@ button:hover {
 -----------footer container----------- */
 
 #footerbox {
-    text-align: center;
-    padding: 1.5em;
-    color:  #aaaaaa;
-    font-size: .8em;
-    font-family: var(--main-font-fam);
-    background: rgb(17, 17, 17)
+  text-align: center;
+  padding: 1.5em;
+  color: #aaaaaa;
+  font-size: 0.8em;
+  font-family: var(--main-font-fam);
+  background: rgb(17, 17, 17);
 }
