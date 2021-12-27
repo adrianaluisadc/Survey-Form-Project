@@ -5,7 +5,7 @@
 }
 
 #background-image {
-    position: fixed;
+  position: fixed;
   object-fit: cover;
   min-width: 100%;
   object-position: -1100px 0;
@@ -16,323 +16,392 @@
   position: relative;
   display: grid;
   grid-template-areas:
-  "header"
-  "survey"
-  "footer" ;
+    "header"
+    "survey"
+    "footer";
   z-index: 1;
   bottom: 0;
   top: 0;
 }
 
 #header-container {
-  
-    grid-area: header;
-    padding: 10%;
+  grid-area: header;
+  padding: 10%;
 }
 
 #header h1 {
-    position: sticky;
+  position: sticky;
 }
 
 #header {
   width: 100%;
   display: grid;
-  grid-template-areas: 
-  "logo h1"
-  "pd pd";
+  grid-template-areas:
+    "logo h1"
+    "pd pd";
 }
 
 #gonowlogo {
-    grid-area: logo;
-    width: 100px;
+  grid-area: logo;
+  width: 100px;
 }
 
 h1 {
-    grid-area: h1;
-    width: 1fr;
-    text-align: center;
-    font-weight: 500;
-    line-height: 1em;
+  grid-area: h1;
+  width: 1fr;
+  text-align: center;
+  font-weight: 500;
+  line-height: 1em;
 }
 
 #description {
-    padding-top: 7%;
-    grid-area: pd;
-    width: 100%;
-    font-weight: 300;
-    text-align: center;
-    line-height: 1em;
+  padding-top: 7%;
+  grid-area: pd;
+  width: 100%;
+  font-weight: 300;
+  text-align: center;
+  line-height: 1em;
 }
-
 
 /* ------survey form------ */
 
-#form-container{
-    grid-area: survey;
+#form-container {
+  grid-area: survey;
 }
 
-
 #form-background {
-    border-radius: 25px 25px 0 0;
-    padding: 5%;
+  border-radius: 25px 25px 0 0;
+  padding: 5%;
 }
 
 label {
-    font-weight: 300;
+  font-weight: 300;
 }
 
 input {
-    width: 100%;
+  width: 100%;
 }
 
 /* -----------survey----------- */
 label {
-    font-family: var(--main-font-fam);
-    display: block;
-    font-size: 1em;
-    color: #fff;
-  }
-  
-  input {
-    font-family: var(--main-font-fam);
-    font-weight: 400;
-    font-size: 1em;
-    padding: 2%;
-    border-radius: none;
-    margin-top: 3%;
-    margin-bottom: 3%;
-    color: #000;
-    background: #fff;
-    border: none;
-  }
-  
-  input::placeholder {
-      font-family: var(--main-font-fam);
-      font-weight: 300;
-      font-size: 1em;
-      font-style: italic;
-    }
-  
-  #form-background {
-    background: rgba(0, 0, 0, 0.5);
-    border-radius: 25px 25px 0 0;
-    padding: 5%;
-  }
-  
-  select {
-    margin-top: 3%;
-    margin-bottom: 3%;
-    width: 100%;
-    font-family: var(--main-font-fam);
-    font-size: 1em;
-    padding: 2%;
-  }
-  
-  #radio-container1,
-  #radio-container2,
-  #radio-container3,
-  #radio-container4,
-  #radio-container5 {
-    width: 100%;
-    padding-left: 10%;
-  }
-  
-  #inputcontent5 input[type="radio"] {
-    opacity: 0;
-    padding: 0;
-    margin: 0;
-  }
-  
-  #inputcontent5 input[type="radio"] + label {
-    padding-left: 9%;
-    position: relative;
+  font-family: var(--main-font-fam);
+  display: block;
+  font-size: 1em;
+  color: #fff;
+}
+
+input {
+  font-family: var(--main-font-fam);
+  font-weight: 400;
+  font-size: 1em;
+  padding: 2%;
+  border-radius: none;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  color: #000;
+  background: #fff;
+  border: none;
+}
+
+input::placeholder {
+  font-family: var(--main-font-fam);
+  font-weight: 300;
+  font-size: 1em;
+  font-style: italic;
+}
+
+#form-background {
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 25px 25px 0 0;
+  padding: 5%;
+}
+
+select {
+  margin-top: 3%;
+  margin-bottom: 3%;
+  width: 100%;
+  font-family: var(--main-font-fam);
+  font-size: 1em;
+  padding: 2%;
+}
+
+#radio-container1,
+#radio-container2,
+#radio-container3,
+#radio-container4,
+#radio-container5 {
+  width: 100%;
+  padding-left: 10%;
+}
+
+#inputcontent5 input[type="radio"] {
+  opacity: 0;
+  padding: 0;
+  margin: 0;
+}
+
+#inputcontent5 input[type="radio"] + label {
+  padding-left: 9%;
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  color: #fff;
+  line-height: 1.3em;
+}
+
+#inputcontent5 input[type="radio"] + label::before {
+  content: "";
+  position: absolute;
+  width: 1em;
+  height: 1em;
+  left: 0;
+  top: 0;
+  border-radius: 100%;
+  border: 2px solid #fff;
+  background: #fff;
+}
+#inputcontent5 input[type="radio"]:hover + label::before {
+  content: "";
+  position: absolute;
+  width: 1em;
+  height: 1em;
+  left: 0;
+  top: 0;
+  border-radius: 100%;
+  background: rgb(255, 206, 173);
+}
+
+#inputcontent5 input[type="radio"]:checked + label::after {
+  content: "";
+  position: absolute;
+  width: 1em;
+  height: 1em;
+  left: 2px;
+  top: 2px;
+  border-radius: 100%;
+  background: #ff6600;
+  opacity: 1;
+  transform: scale(1);
+  transition: 0.3s ease;
+}
+
+#inputcontent5 input[type="radio"]:not(:checked) + label::after {
+  content: "";
+  position: absolute;
+  width: 1em;
+  height: 1em;
+  left: 2px;
+  top: 2px;
+  border-radius: 100%;
+  background: #ff6600;
+  opacity: 0;
+  transform: scale(0);
+}
+
+#inputcontent5:last-child {
+  padding-bottom: 3%;
+}
+
+/* ------------checkbox-area------------ */
+#checkbox-label {
+  padding-top: 3%;
+}
+
+#checkbox-container1,
+#checkbox-container2,
+#checkbox-container3,
+#checkbox-container4,
+#checkbox-container5 {
+  width: 100%;
+  padding-left: 10%;
+}
+
+small {
+  font-family: var(--main-font-fam);
+  color: #fff;
+  font-weight: 200;
+  font-style: italic;
+}
+
+input[type="checkbox"] {
+  opacity: 0;
+  padding: 0;
+  margin: 0;
+}
+
+input[type="checkbox"] + label {
+  padding-left: 10%;
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  color: #fff;
+  line-height: 1.3em;
+}
+
+input[type="checkbox"] + label::before {
+  content: "";
+  position: absolute;
+  width: 1em;
+  height: 1em;
+  left: 3px;
+  top: 0;
+  border: 2px solid #fff;
+  background: #fff;
+}
+
+input[type="checkbox"]:hover + label::before {
+  content: "";
+  position: absolute;
+  width: 1em;
+  height: 1em;
+  left: 3px;
+  top: 0;
+  background: rgb(255, 206, 173);
+}
+
+input[type="checkbox"]:checked + label::after {
+  content: "";
+  position: absolute;
+  width: 1em;
+  height: 1em;
+  left: 4px;
+  top: 2.5px;
+  clip-path: polygon(
+    79% 0,
+    100% 15%,
+    59% 94%,
+    42% 95%,
+    8% 51%,
+    26% 41%,
+    48% 64%
+  );
+  background: #ff6600;
+  opacity: 1;
+  transform: scale(1);
+  transition: 0.3s ease;
+}
+
+input[type="checkbox"]:not(:checked) + label::after {
+  content: "";
+  position: absolute;
+  width: 1em;
+  height: 1em;
+  left: 4px;
+  top: 2.5px;
+  clip-path: polygon(
+    79% 0,
+    100% 15%,
+    59% 94%,
+    42% 95%,
+    8% 51%,
+    26% 41%,
+    48% 64%
+  );
+  background: #ff6600;
+  opacity: 0;
+  transform: scale(0);
+  transition: 0.3s ease;
+}
+
+/* ---------star-rating area------------ */
+
+#inputcontent7 {
+  width: 100%;
+}
+#starrating-label {
+  padding-top: 3%;
+}
+
+#stars-box {
+  text-align: center;
+  font-size: 2.3em;
+  width: 100%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+#firststar,
+#secondstar,
+#thirdstar,
+#fourstar,
+#fivestar {
+  display: inline-block;
+}
+
+#inputcontent7 input[type="radio"] {
+  opacity: 0;
+  padding: 0;
+  margin: 0;
+  width: 0;
+}
+
+#inputcontent7 input[type="radio"] + label {
+  cursor: pointer;
+  display: inline-block;
+  color: rgb(255, 208, 0);
+  cursor: pointer;
+}
+
+#inputcontent7 input[type="radio"]:checked + label ~ label {
+  cursor: pointer;
+  display: inline-block;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+#inputcontent7 input[type="radio"]:hover + label ~ label {
     cursor: pointer;
     display: inline-block;
-    color: #fff;
-    line-height: 1.3em;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
   }
+
   
-  #inputcontent5 input[type="radio"] + label::before {
-    content: "";
-    position: absolute;
-    width: 1em;
-    height: 1em;
-    left: 0;
-    top: 0;
-    border-radius: 100%;
-    border: 2px solid #fff;
-    background: #fff;
-  }
-  #inputcontent5 input[type="radio"]:hover + label::before {
-      content: "";
-      position: absolute;
-      width: 1em;
-      height: 1em;
-      left: 0;
-      top: 0;
-      border-radius: 100%;
-      background: rgb(255, 206, 173);
-    }
   
-    #inputcontent5 input[type="radio"]:checked + label::after {
-    content: "";
-    position: absolute;
-    width: 1em;
-    height: 1em;
-    left: 2px;
-    top: 2px;
-    border-radius: 100%;
-    background: #ff6600;
-    opacity: 1;
-    transform: scale(1);
-    transition: 0.3s ease;
-  }
-  
-  #inputcontent5 input[type="radio"]:not(:checked) + label::after {
-    content: "";
-    position: absolute;
-    width: 1em;
-    height: 1em;
-    left: 2px;
-    top: 2px;
-    border-radius: 100%;
-    background: #ff6600;
-    opacity: 0;
-    transform: scale(0);
-  }
-  
-  #inputcontent5:last-child {
-    padding-bottom: 3%;
-  }
-  
-  /* ------------checkbox-area------------ */
-  #checkbox-label {
-      padding-top: 3%;
-  }
-  
-  #checkbox-container1, #checkbox-container2, #checkbox-container3, #checkbox-container4, #checkbox-container5{
-      width: 100%;
-    padding-left: 10%;
-  }
-  
-  small {
+
+/* ---------textarea area---------- */
+
+textarea {
+    
+    width: 100%;
+    height: 17vh;
     font-family: var(--main-font-fam);
-    color: #fff;
-    font-weight: 200;
+    padding: 3%;
+    margin-top: 5%;
+    margin-bottomm: 5%;
+    background: #fff;
+    resize: none;
+    border:none;
+}
+
+textarea::placeholder {
     font-style: italic;
-  }
-  
-  input[type="checkbox"] {
-    opacity: 0;
-    padding: 0;
-    margin: 0;
-  }
-  
-  input[type="checkbox"] + label {
-    padding-left: 10%;
-    position: relative;
+}
+
+/* -----------submit area------------------ */
+
+#submit-container {
+    margin-top: 7%;
+    width: 100%;
+    text-align: center;
+}
+button {
+    width: 60%;
+    font-family: var(--main-font-fam);
+    font-weight: 500;
+    font-size: 1.1em;
+    padding:1%;
+    background-color:rgb(224, 71, 0);
+    
+    color: black;
+    border:none;
+}
+
+button:hover {
+    background-color: #ffa600;
+    color: #000000;
     cursor: pointer;
-    display: inline-block;
-    color: #fff;
-    line-height: 1.3em;
-  }
-  
-  input[type="checkbox"] + label::before {
-    content: "";
-    position: absolute;
-    width: 1em;
-    height: 1em;
-    left: 3px;
-    top: 0;
-    border: 2px solid #fff;
-    background: #fff;
-  }
-  
-  input[type="checkbox"]:hover + label::before {
-      content: "";
-      position: absolute;
-      width: 1em;
-      height: 1em;
-      left: 3px;
-      top: 0;
-      background:rgb(255, 206, 173);
-    }
-  
-  input[type="checkbox"]:checked + label::after {
-      content: "";
-      position: absolute;
-      width: 1em;
-      height: 1em;
-      left: 4px;
-      top: 2.5px;
-      clip-path: polygon(79% 0, 100% 15%, 59% 94%, 42% 95%, 8% 51%, 26% 41%, 48% 64%);
-      background: #ff6600;
-      opacity: 1;
-      transform: scale(1);
-      transition: 0.3s ease;
-    }
-  
-    input[type="checkbox"]:not(:checked) + label::after {
-      content: "";
-      position: absolute;
-      width: 1em;
-      height: 1em;
-      left: 4px;
-      top: 2.5px;
-      clip-path: polygon(79% 0, 100% 15%, 59% 94%, 42% 95%, 8% 51%, 26% 41%, 48% 64%);
-      background: #ff6600;
-      opacity: 0;
-      transform: scale(0);
-      transition: 0.3s ease;
-    }
-  
-    /* ---------star-rating area------------ */
-  
-  
-    #starrating-label {
-        padding-top: 3%;
-    }
-  
-    #stars-box {
-        text-align:center;
-        font-size: 2.3em;
-        width: 100%;
-        padding-top: 5%;
-        padding-bottom: 5%;
-    }
+    box-shadow: -1px 2px 20px 0px  rgb(255, 153, 0);
+    transform: scale(1.04)
+}
 
-    #firststar, #secondstar, #thirdstar, #fourstar, #fivestar {
-        display: inline-block;
-        
-    }
-
-    #inputcontent7 input[type="radio"] {
-        opacity: 0;
-        padding: 0;
-        margin: 0;
-        width: 0;
-      }
-
-    #inputcontent7 input[type="radio"] + label {
-
-        cursor: pointer;
-        display: inline-block;
-        color: rgb(251, 255, 0);
-        cursor: pointer;
-      }
-
-      #inputcontent7 input[type="radio"]:checked + label ~ label {
-
-        cursor: pointer;
-        display: inline-block;
-        color: rgb(255, 255, 255);
-        cursor: pointer;
-      }
-
-      #inputcontent7 input[type="radio"]:hover + label {
-
-        cursor: pointer;
-        display: inline-block;
-        color: rgb(238, 255, 0);
-        cursor: pointer;
-      }
