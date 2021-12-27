@@ -29,6 +29,17 @@
   padding: 10%;
 }
 
+h1 {
+  color: #fff;
+  font-family: var(--main-font-fam);
+  text-transform: uppercase;
+}
+
+#description {
+  font-family: var(--main-font-fam);
+  color: #fff;
+}
+
 #header h1 {
   position: sticky;
 }
@@ -67,11 +78,7 @@ h1 {
 
 #form-container {
   grid-area: survey;
-}
-
-#form-background {
-  border-radius: 25px 25px 0 0;
-  padding: 5%;
+  padding-bottom: 25%;
 }
 
 label {
@@ -112,7 +119,7 @@ input::placeholder {
 
 #form-background {
   background: rgba(0, 0, 0, 0.5);
-  border-radius: 25px 25px 0 0;
+  border-radius: 25px 25px 25px 25px;
   padding: 5%;
 }
 
@@ -338,6 +345,7 @@ input[type="checkbox"]:not(:checked) + label::after {
 #inputcontent7 input[type="radio"] + label {
   cursor: pointer;
   display: inline-block;
+  text-shadow: 1px 0px 18px rgba(255, 181, 0, 0.71);
   color: rgb(255, 208, 0);
   cursor: pointer;
 }
@@ -347,61 +355,71 @@ input[type="checkbox"]:not(:checked) + label::after {
   display: inline-block;
   color: rgb(255, 255, 255);
   cursor: pointer;
+  text-shadow: none;
 }
 
 #inputcontent7 input[type="radio"]:hover + label ~ label {
-    cursor: pointer;
-    display: inline-block;
-    color: rgb(255, 255, 255);
-    cursor: pointer;
-  }
-
-  
-  
+  cursor: pointer;
+  display: inline-block;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  text-shadow: none;
+}
 
 /* ---------textarea area---------- */
 
 textarea {
-    
-    width: 100%;
-    height: 17vh;
-    font-family: var(--main-font-fam);
-    padding: 3%;
-    margin-top: 5%;
-    margin-bottomm: 5%;
-    background: #fff;
-    resize: none;
-    border:none;
+  width: 100%;
+  height: 17vh;
+  font-family: var(--main-font-fam);
+  padding: 3%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  background: #fff;
+  resize: none;
+  border: none;
 }
 
 textarea::placeholder {
-    font-style: italic;
+  font-style: italic;
 }
 
 /* -----------submit area------------------ */
 
 #submit-container {
-    margin-top: 7%;
-    width: 100%;
-    text-align: center;
+  margin-top: 7%;
+  margin-bottom: 7%;
+  width: 100%;
+  text-align: center;
 }
 button {
-    width: 60%;
-    font-family: var(--main-font-fam);
-    font-weight: 500;
-    font-size: 1.1em;
-    padding:1%;
-    background-color:rgb(224, 71, 0);
-    
-    color: black;
-    border:none;
+  width: 60%;
+  font-family: var(--main-font-fam);
+  font-weight: 400;
+  font-size: 1.1em;
+  padding: 1%;
+  background-color: #ff6600;
+
+  color: rgb(0, 0, 0);
+  border: none;
 }
 
 button:hover {
-    background-color: #ffa600;
-    color: #000000;
-    cursor: pointer;
-    box-shadow: -1px 2px 20px 0px  rgb(255, 153, 0);
-    transform: scale(1.04)
+  background-color: #ffa600;
+  color: #000000;
+  cursor: pointer;
+  box-shadow: -1px 2px 20px 0px rgb(255, 153, 0);
+  transform: scale(1.04);
 }
 
+/* 
+-----------footer container----------- */
+
+#footerbox {
+  text-align: center;
+  padding: 1.5em;
+  color: #aaaaaa;
+  font-size: 0.8em;
+  font-family: var(--main-font-fam);
+  background: rgb(17, 17, 17);
+}

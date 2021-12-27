@@ -9,15 +9,3 @@
   margin: 0;
   box-sizing: border-box;
 }
-
-h1 {
-  color: #fff;
-  font-family: var(--main-font-fam);
-  text-transform: uppercase;
-}
-
-#description {
-  font-family: var(--main-font-fam);
-  color: #fff;
-}
-

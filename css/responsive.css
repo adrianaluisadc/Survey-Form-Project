@@ -1,0 +1,135 @@
+@media only screen and (min-width: 480px) {
+  h1 {
+    font-size: 2.3em;
+  }
+
+  #gonowlogo {
+    justify-self: right;
+  }
+}
+
+@media only screen and (min-width: 521px) {
+  #description {
+    font-size: 1.2em;
+  }
+}
+@media only screen and (min-width: 561px) {
+  #background-image {
+    width: 1200px;
+    object-position: 0px 0px;
+  }
+
+  #gonowlogo {
+    width: 150px;
+    justify-self: right;
+  }
+
+  h1 {
+    font-size: 3em;
+  }
+}
+
+@media only screen and (min-width: 715px) {
+  h1 {
+    padding-left: 1%;
+    padding-top: 2%;
+    font-size: 3.5em;
+  }
+
+  #description {
+    font-size: 1.3em;
+  }
+}
+
+@media only screen and (min-width: 752px) {
+  h1 {
+    padding-left: 1%;
+    padding-top: 0px;
+    font-size: 3.5em;
+  }
+}
+
+@media only screen and (min-width: 806px) {
+  h1 {
+    padding-left: 1%;
+    padding-top: 4%;
+    font-size: 3.5em;
+  }
+
+  #description {
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+}
+
+@media only screen and (min-width: 1096px) {
+  h1 {
+    padding-left: 1%;
+    padding-top: 5%;
+    font-size: 3.5em;
+  }
+
+  #description {
+    padding-left: 25%;
+    padding-right: 25%;
+  }
+}
+
+@media only screen and (min-width: 1152px) {
+  h1 {
+    padding-left: 1%;
+    padding-top: 6%;
+    font-size: 3.6em;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  h1 {
+    padding-top: 4%;
+    font-size: 5em;
+  }
+
+  #header {
+    width: 100%;
+    display: grid;
+    grid-template-areas:
+      "logo"
+      "h1"
+      "pd";
+  }
+
+  #gonowlogo {
+    justify-self: center;
+  }
+
+  label {
+    font-size: 1.2em;
+  }
+
+  #inputcontent5 {
+    float: left;
+    width: 50%;
+  }
+
+  #inputcontent6 {
+    float: left;
+    width: 50%;
+  }
+
+  #checkbox-label {
+    padding-top: 0;
+    display: inline-block;
+  }
+
+  #starrating-label {
+    clear: both;
+  }
+
+  #stars-box {
+    font-size: 3em;
+  }
+
+  textarea {
+    font-size: 1em;
+  }
+}
