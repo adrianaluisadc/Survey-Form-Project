@@ -43,4 +43,4 @@ A survey form page app project assigned by FreeCodeCamp in the Responsive Design
 - [x] User Story #16: Inside the form element, I am presented with a button with id="submit" to submit all my inputs.
 
 
-<h2>sted site link : https://adrianaluisadc.github.io/Survey-Form-Project/</h2>
+<h2>Hosted site link : https://adrianaluisadc.github.io/Survey-Form-Project/</h2>
