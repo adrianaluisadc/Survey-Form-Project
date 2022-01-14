@@ -5,7 +5,7 @@
 [![forthebadge](https://forthebadge.com/images/badges/uses-css.svg)](https://forthebadge.com)
 [![forthebadge](https://forthebadge.com/images/badges/uses-html.svg)](https://forthebadge.com)
 
-A survey form page app project assigned by FreeCodeCamp in the Responsive Design Course, implementing only HTML5 and CSS3.
+A Survey Form Page app project assigned by FreeCodeCamp in the Responsive Design Course, implementing only HTML5 and CSS3.
 
 
 <b>Requirements:</b>
